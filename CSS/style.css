@@ -270,13 +270,18 @@ img{
 }
 
 @media screen and (max-width: 968px){
+    body{
+        background-color: var(--container-color);
+    }
+
     .nav__menu{
         position: fixed;
         bottom: -100%;
         left: 0;
         width: 100%;
         padding: 2rem 1.5rem;
-        background-color: var(--body-color);
+        /* background-color: var(--body-color); */
+        background-color: var(--container-color-alt);
         box-shadow: 0 1px 4px rgba(0,0,0,.1);
         border-radius: 1rem 1rem 0 0;
         z-index: var(--z-fixed);
@@ -333,6 +338,7 @@ img{
 
 .active-link{
     color: var(--title-color);
+    /* color: black; */
 }
 
 /* ########################## Home ############################## */
@@ -389,8 +395,8 @@ img{
     margin-top: var(--mb-3);
 }
 .home__button-movil:hover{
-    background-color: var(--text-color);
-    color: var(--container-color);
+    background-color: var(--container-color-alt);
+    color: var(--title-color);
 }
 
 
@@ -468,6 +474,10 @@ img{
     font-size: var(--smaller-font-size);
     color: var(--title-color);
 }
+.experience__description{
+    font-size: var(--smaller-font-size);
+    font-weight: 600;
+}
 
 /* ###################### SKILLS AND LANGUAGES ###################### */
 .skills__content{
@@ -531,7 +541,7 @@ img{
     /* display: inline-block; */
     display: flex;
     align-items: center;
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-1);
     margin-left: var(--mb-3);
 }
 
@@ -547,7 +557,7 @@ img{
 
 }
 .interests__icon{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--text-color-light);
     margin-bottom: .25rem;
 }
