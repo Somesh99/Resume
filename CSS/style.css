@@ -421,6 +421,12 @@ img{
     margin-right: .25rem;
 
 }
+.all__icon{
+    position: relative;
+    font-size: 1.2rem;
+    margin-right: .25rem;
+    top: .1rem;
+}
 
 /* ###################### PROFILE ################################### */
 
